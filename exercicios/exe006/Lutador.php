@@ -1,5 +1,4 @@
 <?php
-//require_once 'Modificador.php';
 
 class Lutador {  //***ATRIBUTOS***
     private $nome;
@@ -10,11 +9,11 @@ class Lutador {  //***ATRIBUTOS***
     //***MÉTODOS***
     function apresentar() {
         echo "<p>----------------------------</p>";
-        echo "<p>CHEGOU A HORA! O Lutador" . $this->getNome();
-        echo "Veio diretamente de " . $this->getNacionalidade();
-        echo "tem " . $this->getIdade() . " anos e pesa " . $this->getPeso() . "Kg";
-        echo "<br>Ele tem " . $this->getVitorias() . "vitórias";
-        echo $this->getDerrotas() . "derrotas e " . $this->getEmpates() . "empates";
+        echo "<p>CHEGOU A HORA! O Lutador " . $this->getNome();
+        echo " veio diretamente de " . $this->getNacionalidade();
+        echo ", tem " . $this->getIdade() . " anos e pesa " . $this->getPeso() . "Kg";
+        echo "<br>Ele tem " . $this->getVitorias() . " vitórias, ";
+        echo $this->getDerrotas() . " derrotas e " . $this->getEmpates() . " empates";
     }
 
     function status() {
